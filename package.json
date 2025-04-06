@@ -1,0 +1,19 @@
+{
+    "name": "2fa-bypass-lab",
+    "version": "1.0.0",
+    "description": "Lab for demonstrating 2FA bypass vulnerability",
+    "main": "server.js",
+    "scripts": {
+        "start": "node server.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "dependencies": {
+        "body-parser": "^1.20.3",
+        "ejs": "^3.1.10",
+        "express": "^4.21.2",
+        "express-session": "^1.18.1",
+        "nodemailer": "^6.10.0"
+    },
+    "author": "Maram",
+    "license": "MIT"
+}

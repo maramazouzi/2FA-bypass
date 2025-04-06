@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Account</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="nav">
+        <a href="/">Home</a>
+        <a href="/logout">Logout</a>
+    </div>
+
+    <div class="container">
+        <h1>Welcome <%= username %></h1>
+        <% if (flag) { %>
+            <div class="success">
+                <% if (flag === 'april6_hello') { %>
+                    <p>Secret Token: <strong><%= flag %></strong></p>
+                <% } else { %>
+                    <p><%= flag %></p>
+                <% } %>
+            </div>
+        <% } %>
+    </div>
+</body>
+</html>
